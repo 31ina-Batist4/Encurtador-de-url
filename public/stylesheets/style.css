@@ -1,0 +1,68 @@
+.header {
+
+text-align: center;
+
+}
+body {
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkslategray;
+  width: 100vw;
+  height: 100vh;
+  color: #ccc;
+}
+
+.form-control {
+  border-radius: 10px;
+}
+.btn {
+  padding: 8px 10px;
+  width: 100px;
+  margin-left: 10px;
+  margin-top: 10px;
+  border-radius: 15px;
+  background-color: yellowgreen;
+  font-size: 18px;
+  border: 2px solid darkslategray;
+  color: darkslategray;
+}
+.btn:hover {
+  transition: .5s;
+  background-color: rgb(208, 231, 161);
+  color: rgb(61, 82, 82);
+}
+
+.icon{
+  width: 100px;
+  height: 100px;
+}
+.content {
+  display: flex;
+  justify-content: center !important;
+}
+form {
+  flex: 0 0 60%;
+  padding: 1rem 1rem 1rem 1rem;
+  border: 1px solid darkslategray;
+  border-radius: .25rem;
+  text-align: center;
+}
+.stats {
+  text-align: center;
+}
+.statsBox{
+  flex: 0 0 25%;
+  padding: 2rem;
+  border: 2px solid rgb(14, 59, 59);
+  border-radius: .25rem;
+  text-align: center;
+  margin: .5rem;
+  color: #ccc;
+
+}
+.statsRow {
+  display: flex;
+  justify-content: center !important;
+}
