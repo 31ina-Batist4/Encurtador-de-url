@@ -1,5 +1,7 @@
 const { Router } = require('express');
 var express = require('express');
+const app = require('express')();
+const http = require('http');
 var router = express.Router();
 const Link = require('../models/link');
 
@@ -48,5 +50,11 @@ router.post('/new', async(req, res, next) => {
 
   res.render('stats', resultado.dataValues);
 })
+module.exports = function (app) {
+  app.get('/users/:id', (req, res) => {
+    const filtro = req.query.filtro;
+    return res.status(404).send(false);
+  })
+}
 
 module.exports = router;
