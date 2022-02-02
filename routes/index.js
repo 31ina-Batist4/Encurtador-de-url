@@ -4,6 +4,7 @@ const app = require('express')();
 const http = require('http');
 var router = express.Router();
 const Link = require('../models/link');
+ const port = process.env.PORT || 3000;
 
 router.get('/:code/stats', async (req, res, next) => {
   const code = req.params.code;
